@@ -1,6 +1,6 @@
+window.onload = function() {
 document.querySelector('.left-container2').style.display = 'none';
 
-window.onload = function() {
 
 const submitButton = document.getElementById('submitButton');
 const upgradeFeatures = document.getElementById('upgradeFeatures');
