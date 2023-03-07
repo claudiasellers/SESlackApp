@@ -8,7 +8,6 @@ const upgradeResources = document.getElementById('upgradeResources');
 
 document.querySelector('.left-container2').style.display = 'none';
 
-
 submitButton.addEventListener('click', function() {
     event.preventDefault();
   // Get the selected values of the currentPlan and futurePlan dropdowns
@@ -20,6 +19,7 @@ submitButton.addEventListener('click', function() {
   
   // Determine the appropriate feature list based on the selected plan values
   let featureList = '';
+  let resourcesList = '';
   if (currentPlanValue === 'plus' && futurePlanValue === 'select') {
     featureList = "<strong style='color:#E01E5A'>Admin API</strong>: Automate admin processes.<br><br><strong style='color:#E01E5A'>Session Management</strong>: Granular logout controls that can be applied to mobile or desktop (also available via the Admin API).<br><br><strong style='color:#E01E5A'>DLP (Data Loss Prevention)</strong>: Automatically scan and detect/remove unsanctioned data (requires third party CASB tool).<br><br><strong style='color:#E01E5A'>Audit Logs API</strong>: Proactively track user actions to detect potential security threads (requires third party SIEM tool or custom tool).<br><br><strong style='color:#E01E5A'>Audit Logs (Native Dashboard)</strong>: Track user actions directly in a Slack admin dashboard.<br><br><strong style='color:#E01E5A'>eDiscovery Archiving</strong>: Automatically back up Slack data in a third party data warehouse to then filter and search specific data that is required for an audit.<br><br><strong style='color:#E01E5A'>Exports (Single User Exports)</strong>: Data related to a specific user (JSON or TXT file).";
   } else if (currentPlanValue === 'pro' && futurePlanValue === 'plus') {
@@ -41,10 +41,18 @@ submitButton.addEventListener('click', function() {
     featureList = 'No features available for this upgrade.';
   }
   
+
   // Update the text of the upgradeFeatures paragraph element
   upgradeFeatures.innerHTML = featureList;
-  upgradeResources.innerHTML = resourcesList;
+  upgradeResources.innerHTML = resourcesList
+
+  if (resourcesList) {
   document.querySelector('.left-container2').style.display = 'block';
+  } else {
+    document.querySelector('.left-container2').style.display = 'none';
+  }
+
+  
 
 });
 
