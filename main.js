@@ -72,7 +72,8 @@ submitButton.addEventListener('click', function() {
     
     });
   
-  
+    mixpanel.people.increment("Upgrade Features Viewed");
+
 
 });
 
