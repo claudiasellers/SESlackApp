@@ -141,3 +141,16 @@ h3.outcomeHeading {
 .row#topRow h4 {
   text-align: center;
 }
+
+
+#upgradeFeatures {
+	max-height: 200px;
+	overflow-y: auto;
+  }
+
+
+  .scrollable {
+	height: 200px; /* Set the height of the container */
+	overflow: auto; /* Add scrollbar if content overflows */
+  }
+  
