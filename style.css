@@ -173,15 +173,7 @@ h3.outcomeHeading {
 	font-size: 14px;
   }
 
-     /* Changes the color of all links */
-	 a {
-        color: #36C5F0;
-      }
 
-      /* Changes the color of visited links */
-      a:visited {
-        color: #36C5F0;
-      }
 
       /* Changes the color of hovered links */
       a:hover {
