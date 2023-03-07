@@ -1,3 +1,5 @@
+document.querySelector('.left-container2').style.display = 'none';
+
 window.onload = function() {
 
 const submitButton = document.getElementById('submitButton');
@@ -6,7 +8,6 @@ const currentPlan = document.getElementById('currentPlan');
 const futurePlan = document.getElementById('futurePlan');
 const upgradeResources = document.getElementById('upgradeResources');
 
-document.querySelector('.left-container2').style.display = 'none';
 
 submitButton.addEventListener('click', function() {
     event.preventDefault();
