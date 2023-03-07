@@ -89,6 +89,7 @@ nav li a:hover {
   padding: 8px;
   border-radius: 5px;
   width: 80%;
+  margin-bottom: 20px;
 }
 
 .left-container form {
@@ -143,3 +144,46 @@ h3.outcomeHeading {
 }
 
 
+.left-container2 {
+	background-color: #F5F5F5;
+	padding: 8px;
+	border-radius: 5px;
+	width: 80%;
+	margin-bottom: 20px;
+	
+  }
+  
+  .left-container2 form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .left-container2 label {
+	margin-bottom: 6px;
+  }
+  
+  .left-container2 select {
+	margin-bottom: 10px;
+	padding: 4px;
+	border-radius: 3px;
+	border: none;
+	background-color: white;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	font-size: 14px;
+  }
+
+     /* Changes the color of all links */
+	 a {
+        color: #36C5F0;
+      }
+
+      /* Changes the color of visited links */
+      a:visited {
+        color: #36C5F0;
+      }
+
+      /* Changes the color of hovered links */
+      a:hover {
+        color: red;
+      }
