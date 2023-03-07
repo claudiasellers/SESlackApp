@@ -7,3 +7,4 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
 // but it's recommended you remove it for production
 mixpanel.init('7e62f8d9e499ff952379b4bba18631ee', {debug: true}); 
 mixpanel.track('Site Opened');
+mixpanel.identify()

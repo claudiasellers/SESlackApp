@@ -65,11 +65,13 @@ submitButton.addEventListener('click', function() {
   } else {
     document.querySelector('.left-container2').style.display = 'none';
   }
+  
   mixpanel.track('Upgrade Features Viewed', {
     'Current Plan': currentPlan.value,
     'Future Plan': futurePlan.value,
     
     });
+  
   
 
 });
