@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Upgrade Features</a></li>
+          <!-- <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="row" id = "topRow">
+        <p style="color:#4A154B;"><strong>Directions: </strong>Select the customer's current plan, the plan they would be on if they upgraded, and click Submit!</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="left-column">
+            <div class="left-container">
+              <h2 style="color:#0f9ec9;">Select Options</h2>
+              <form>
+                <label for="currentPlan" style="color:#0f9ec9;"><strong>Current Plan:</strong></label>
+                <select id="currentPlan" name="currentPlan" style="color:#4A154B;">
+                  <option value="free">Free</option>
+                  <option value="pro">Pro</option>
+                  <option value="plus">Business Plus</option>
+                  <option value="select">Enterprise Select</option>
+                  <option value="grid">Enterprise Grid</option>
+                </select>
+          
+                <label for="futurePlan" style="color:#0f9ec9;"><strong>Future Plan:</strong></label>
+                <select id="futurePlan" name="futurePlan" style="color:#4A154B;">
+                  <option value="free">Free</option>
+                  <option value="pro">Pro</option>
+                  <option value="plus">Business Plus</option>
+                  <option value="select">Enterprise Select</option>
+                  <option value="grid">Enterprise Grid</option>
+                </select>
+                <br><br>
+                <button id = "submitButton" type="submit" >Submit</button>            
+              </form>
+            </div>
+          </div>        
+        </div>
+        <div class="column">
+           <h3 class = "outcomeHeading">What they get with an upgrade:</h3>
+           <p id = "upgradeFeatures"></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Your footer content goes here -->
+    </footer>
+  </body>
+</html>

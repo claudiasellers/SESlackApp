@@ -1,0 +1,143 @@
+body {
+  font-family: 'Aktiv Grotesk', sans-serif;
+}
+
+nav {
+	background-color: #4A154B;
+	color: white;
+	text-align: center;
+	height: 50px; /* updated height */
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	height: 30px; /* added height */
+	vertical-align: middle; /* added vertical alignment */
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	height: 100%; /* added height */
+}
+
+nav li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	display: inline-block; /* added display */
+	height: 100%; /* added height */
+	line-height: 30px; /* added line-height */
+	transition: background-color 0.3s;
+}
+
+nav li a:hover {
+	background-color: #0f9ec9;
+	max-height: 30px; /* added max-height */
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex: 1;
+	padding: 10px;
+}
+
+.column nav {
+	background-color: #36C5F0;
+	color: white;
+	text-align: center;
+}
+
+.column ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.column li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.column li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s;
+}
+
+.column li a:hover {
+	background-color: #0f9ec9;
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		flex-basis: 100%;
+	}
+}
+.left-container {
+  background-color: #F5F5F5;
+  padding: 8px;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.left-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container label {
+  margin-bottom: 6px;
+}
+
+.left-container select {
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  font-size: 14px;
+}
+
+button {
+  background-color: #36C5F0;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0f9ec9;
+}
+
+h3.outcomeHeading {
+  text-align: center;
+  color: #0f9ec9;
+}
+
+.row#topRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* set height to full viewport height */
+}
+
+.row#topRow h4 {
+  text-align: center;
+}
