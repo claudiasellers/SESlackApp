@@ -179,3 +179,13 @@ h3.outcomeHeading {
       a:hover {
         color: red;
       }
+
+	  .tab-nav li a {
+		color: #36C5F0;
+	
+	  }
+
+	  .tab-nav li a:hover {
+		color: white;
+	
+	  }
